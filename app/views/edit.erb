@@ -1,4 +1,5 @@
 <h2>Post #<%= @post.id %></h2>
 <form method="POST" action="patch '/posts/:id'">
-  <h3>Name: <input id="hidden" type="hidden" 
+  <h3>Name: <input id="hidden" type="hidden" name="_method" value="patch"></h3>
+  <p>Content: <input id="hidden" type="hidden" name="method" value="patch"></p>
 </form>
