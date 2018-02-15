@@ -3,7 +3,8 @@
 <p>Content: <%= @post.content %></p><br>
 <h2>Enter your edits below...</h2><br>
 <form method="POST" action="/posts/<%= @post.id %>">
-  <h3>Name: <input id="hidden" type="hidden" name="_method" value="patch">
+  <h3>Name: 
+    <!-- <input id="hidden" type="hidden" name="_method" value="patch"> -->
     <input type="text" name="name" value="<%= @post.name %>">
   </h3><br>
   <p>Content: <input id="hidden" type="hidden" name="_method" value="patch">
