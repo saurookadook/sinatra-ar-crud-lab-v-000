@@ -3,9 +3,15 @@ class Post < ActiveRecord::Base
 
   ALL_POSTS = []
 
-  def initialize(info_hash)
-    @name = info_hash[:name]
-    @content = info_hash[:content]
+  # def initialize(info_hash)
+  #   @name = info_hash[:name]
+  #   @content = info_hash[:content]
+  #   ALL_POSTS << self
+  # end
+
+  def initialize(name: nil, content: nil)
+    @name = name
+    @content = content
     ALL_POSTS << self
   end
 
